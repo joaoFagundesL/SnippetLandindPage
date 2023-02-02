@@ -1,0 +1,21 @@
+@use '../abstract/mixins' as m;
+@use '../abstract/colors' as c;
+
+.painted-background {
+    a {
+        @include m.buttonCustomization(1rem, 0); 
+    }
+}
+
+.section-secondary {
+    a {
+        @include m.buttonCustomization(1rem, 1rem);
+    }
+}
+
+.get-started {
+    color: c.$whiteFont;
+}
+.button-dark-font {
+    color: c.$buttonFontColor;
+}

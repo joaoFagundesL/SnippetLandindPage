@@ -1,0 +1,11 @@
+@use '../abstract/colors';
+
+@mixin buttonCustomization($padding-tb, $padding-rl) {
+    background-color: colors.$buttonColor;
+    padding: $padding-tb $padding-rl;
+    text-align: center;
+    border-radius: .25rem;
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: 600;
+}

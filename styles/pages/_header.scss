@@ -1,0 +1,33 @@
+@use '../abstract' as a;
+
+.painted-background {
+    background-image: url(/Assets/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+   font-family: 'Poppins', sans-serif;
+
+    div {
+        padding: 2rem 1rem 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        .menu {
+            cursor: pointer;
+        }
+    }
+    .main-section {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+
+        img {
+            margin-top: 2rem;
+        }
+    }
+}
