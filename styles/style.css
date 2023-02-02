@@ -94,6 +94,9 @@
     margin-top: 5rem;
   }
 }
+.painted-background .main-section .header-text {
+  max-width: 650px;
+}
 .painted-background .main-section img {
   margin-top: 2rem;
 }
