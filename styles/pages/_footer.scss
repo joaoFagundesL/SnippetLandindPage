@@ -4,17 +4,26 @@
     padding: 1rem;
     font-family: 'Poppins', sans-serif;
 
+    @include a.tablet {
+        padding-inline: 4rem;
+    }
+
     div {
         display: flex;
         flex-direction: column;
+        margin-bottom: 2.5rem;
         gap: 1rem;
+
+        @include a.tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     ul {
         display: flex;
         gap: 1rem;
         justify-content: space-between;
-        margin-bottom: 2.5rem;
     }
 
     img {

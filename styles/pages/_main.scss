@@ -2,13 +2,37 @@
 
 .section-secondary {
     padding: 4rem 1rem 3.5rem;
-
     font-family: 'Poppins', sans-serif;
+
+    img {
+        @include a.tablet {
+            width: 600px;
+            height: 600px;
+            object-fit: contain;
+            margin-inline: auto;
+        }
+    }
+
+    @include a.tablet {
+        padding-inline: 4rem;
+    }
 
     .container-info {
         display: flex;
         flex-direction: column;
         gap: .8rem;
+
+        @include a.tablet {
+            max-width: 600px;
+        }
+    }
+
+    .word {
+        display: block;
+
+        @include a.tablet {
+            display: initial;
+        }
     }
 
     a {

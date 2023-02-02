@@ -9,3 +9,12 @@
     font-size: .875rem;
     font-weight: 600;
 }
+
+
+@mixin tablet {
+    @media (min-width: 720px) { @content; }
+}
+@mixin desktop {
+    @media (min-width: 1200px) { @content; }
+}
+

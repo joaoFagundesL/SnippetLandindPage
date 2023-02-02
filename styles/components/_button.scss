@@ -13,6 +13,20 @@
     }
 }
 
+.main-section {
+    a {
+        @include m.tablet {
+            @include m.buttonCustomization(1rem, 1rem);
+        }
+    }
+}
+
+.header-info {
+    a {
+        @include m.buttonCustomization(1rem , 1rem);
+    }
+}
+
 .get-started {
     color: c.$whiteFont;
 }
