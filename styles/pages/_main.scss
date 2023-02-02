@@ -4,12 +4,23 @@
     padding: 4rem 1rem 3.5rem;
     font-family: 'Poppins', sans-serif;
 
+    @include a.desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;    
+        padding-inline: 16rem !important;
+    }
+
     img {
         @include a.tablet {
             width: 600px;
             height: 600px;
             object-fit: contain;
             margin-inline: auto;
+        }
+        
+        @include a.desktop {
+            width: 100%;
         }
     }
 
@@ -24,6 +35,10 @@
 
         @include a.tablet {
             max-width: 600px;
+        }
+
+        @include a.desktop {
+            order: -1;
         }
     }
 

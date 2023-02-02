@@ -8,6 +8,10 @@
         padding-inline: 4rem;
     }
 
+    @include a.desktop {
+        padding-inline: 16rem;
+    }
+
     div {
         display: flex;
         flex-direction: column;

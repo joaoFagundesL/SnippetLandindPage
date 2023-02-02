@@ -14,6 +14,10 @@
         @include a.tablet {
             padding-inline: 4rem;
         }
+
+        @include a.desktop {
+            padding-inline: 16rem;
+        }
     }
 
     nav {
@@ -63,6 +67,12 @@
                 align-items: center;
                 margin-bottom: 8.5rem;
             }
+
+            @include a.desktop {
+                min-width: 750px;
+                margin-bottom: 5rem;
+                margin-top: 5rem;
+            }
         }
 
         img {
@@ -71,6 +81,10 @@
             @include a.tablet {
                 width: 700px;
                 margin-inline: auto;
+            }
+
+            @include a.desktop {
+                max-width: 900px;
             }
         }
     }
