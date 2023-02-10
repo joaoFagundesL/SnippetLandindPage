@@ -67,7 +67,7 @@
   transition: transform 350ms ease-in;
 }
 .painted-background .header-info {
-  position: absolute;
+  position: fixed;
   background-color: #ddc4d0;
   transform: translateX(100%);
   transition: transform 350ms ease-in;
@@ -192,7 +192,6 @@
   }
 }
 .section-secondary a {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -232,7 +231,6 @@
   justify-content: space-between;
 }
 .footer img {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -245,6 +243,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
+  overflow-x: hidden;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
