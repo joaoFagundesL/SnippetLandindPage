@@ -1,8 +1,6 @@
 @use '../abstract' as a;
 
-.fixed {
-    position: fixed;
-}
+.fixed { position: fixed; }
 
 .painted-background {
     background-image: url(/Assets/Background.png);
@@ -13,26 +11,22 @@
 
     .painted-container {
         padding: 2rem 1rem 0;
-        @include a.tablet {
-            padding-inline: 4rem;
-        }
-        @include a.desktop {
-            padding-inline: 16rem;
-        }
+
+        @include a.tablet { padding-inline: 4rem; }
+
+        @include a.desktop { padding-inline: 16rem; }
     }
     nav {
         display: flex;
         justify-content: space-between;
-        @include a.tablet {
-            align-items: center;
-        }
+
+        @include a.tablet { align-items: center; }
+
         .menu {
             cursor: pointer;
             z-index: 999;
 
-            @include a.tablet {
-                display: none;
-            }
+            @include a.tablet { display: none; }
         }
     }
     .header-info.opened {
@@ -58,17 +52,14 @@
             flex-direction: row;
             gap: 1.5rem;
         }
-        img {
-            margin-top: 5rem;
-        }
+
+        img { margin-top: 5rem; }
+
         @include a.tablet {
-            .search {
-                margin-top: 0;
-            }
+            .search { margin-top: 0; }
         }
-        .search, .sign-in {
-            cursor: pointer; 
-        }
+
+        .search, .sign-in { cursor: pointer; }
     }
     .main-section {
         div {
@@ -89,18 +80,17 @@
                 margin-top: 5rem;
             }
         }
-        .header-text {
-            max-width: 650px;
-        }
+        .header-text { max-width: 650px; }
+
         img {
             margin-top: 2rem;
+
             @include a.tablet {
                 width: 700px;
                 margin-inline: auto;
             }
-            @include a.desktop {
-                max-width: 900px;
-            }
+
+            @include a.desktop { max-width: 900px; }
         }
     }
 }

@@ -1,35 +1,34 @@
-@use '../abstract/mixins' as m;
-@use '../abstract/colors' as c;
+@use '../abstract/' as a;
 
 .painted-background {
     a {
-        @include m.buttonCustomization(1rem, 0); 
+        @include a.buttonCustomization(1rem, 0); 
     }
 }
 
 .section-secondary {
     a {
-        @include m.buttonCustomization(1rem, 1rem);
+        @include a.buttonCustomization(1rem, 1rem);
     }
 }
 
 .main-section {
     a {
-        @include m.tablet {
-            @include m.buttonCustomization(1rem, 1rem);
+        @include a.tablet {
+            @include a.buttonCustomization(1rem, 1rem);
         }
     }
 }
 
 .header-info {
     a {
-        @include m.buttonCustomization(1rem , 1rem);
+        @include a.buttonCustomization(1rem , 1rem);
     }
 }
 
 .get-started {
-    color: c.$whiteFont;
+    color: a.$whiteFont;
 }
 .button-dark-font {
-    color: c.$buttonFontColor;
+    color: a.$buttonFontColor;
 }
